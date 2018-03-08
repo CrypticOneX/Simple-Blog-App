@@ -1,0 +1,9 @@
+{% extends 'blogapp/layout.html' %}
+{% block content %}
+<h2>Recent Posts</h2>
+<ul>
+    {% for blogs in blog_title %}
+        <li><a href="details/{{blogs.id}}">{{blogs.title}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
